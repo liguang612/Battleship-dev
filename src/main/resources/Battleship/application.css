@@ -1,0 +1,48 @@
+#play_btn, #score_btn, #exit_btn, #sound_btn, #details_btn{
+    -fx-font-size: 22;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+#random_btn, #delete_btn, #rotate_btn, #start_btn, #back_btn {
+    -fx-background-radius: 50;
+    -fx-cursor: hand;
+}
+
+#random_btn:hover, #delete_btn:hover, #rotate_btn:hover, #start_btn:hover, #back_btn:hover{
+    -fx-background-color: #F5B164;
+}
+
+#text {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+}
+
+#details_pane {
+    -fx-background-color: #D0CFFF;
+}
+
+#scroll {
+    -fx-background: #D0CFFF;
+}
+#reset_btn {
+        -fx-font-size: 18;
+        -fx-font-weight: bold;
+        -fx-text-align: center;
+        -fx-pref-height: 50px;
+        -fx-pref-width: 180px;
+        -fx-cursor: hand;
+        -fx-border-style: none;
+        -fx-border-width: 2px;
+        -fx-border-color: black;
+}
+
+#reset_btn:hover {
+    -fx-background-color: #9DA9C4;
+}
+
+#reset_btn:pressed {
+    -fx-background-color: #C0C8D5;
+}

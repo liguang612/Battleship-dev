@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="gameRoot" fx:id="gameRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #B0C4DE;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Battleship.GameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/background/z3512875506533_31983bd0db96a08e8df6335763a74296.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="476.0" layoutY="5.0" prefHeight="82.0" prefWidth="127.0" text="SCORE" textFill="RED">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerPoint" alignment="CENTER" layoutX="476.0" layoutY="68.0" prefHeight="38.0" prefWidth="127.0" text="0" textFill="#030000">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentTurn" layoutX="47.0" layoutY="45.0" prefHeight="45.0" prefWidth="202.0" text="Số điểm đã bắn: 0" textFill="#030000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentHit" layoutX="47.0" layoutY="98.0" prefHeight="45.0" prefWidth="202.0" text="Số điểm bắn trúng: 0/17" textFill="#030000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="shootRate" layoutX="260.0" layoutY="45.0" prefHeight="45.0" prefWidth="202.0" text="Tỷ lệ bắn trúng: 0%" textFill="#030000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="shipFleet" layoutX="260.0" layoutY="98.0" prefHeight="45.0" prefWidth="202.0" text="Số tàu bị hạ: 0/5" textFill="#030000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="819.0" layoutY="5.0" prefHeight="82.0" prefWidth="140.0">
+         <font>
+            <Font name="MV Boli" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" alignment="CENTER" contentDisplay="CENTER" layoutX="806.0" layoutY="89.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="62.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="Quay về Menu" textFill="#0d0c0c">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

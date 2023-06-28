@@ -1,0 +1,50 @@
+1. Kiểu chơi
+    - Chơi với máy
+
+2. Mục tiêu
+    - Đánh bại 5 tàu của kẻ địch
+
+3. Thành phần
+    - Bản đồ kích thước 10x10
+    - 5 tàu chiến/1 bên
+    - Mỗi loại tàu sẽ có một health nhất định
+
+4. Chuẩn bị
+    - Người chơi sử dụng chuột kéo thả tàu vào vị trí mong muốn trên bản đồ đặt tàu
+*Luật đặt tàu chiến
+	+ Đặt tàu theo vị trí ngang dọc, không được đặt chéo
+	+ Không được đặt tàu chồng lên vị trí của tàu khác
+	+ Không thể thay đổi vị trí của tàu khi trò chơi bắt đầu
+*Người chơi có thể ấn nút Random để đặt tàu ngẫu nhiên
+    - Chọn chế độ chơi: Easy, Medium, Hard
+
+5. Cách chơi
+    - Bạn là người đi trước. Mỗi đợt bạn bắn một viên đạn để cố trúng tàu của đối phương (máy).
+
+*Bắn tàu
+    - Trong mỗi lượt, bạn chọn ra một vị trí (một ô) trên bản đồ mục tiêu để bắn đạn vào.
+    - Mỗi vị trí trên bản đồ mục tiêu sẽ ứng với vị trí trên vùng biển đối phương
+    - Khi bạn bắn vào một vị trí, máy sẽ thông báo cho bạn là bắn trúng hay trượt
+
+*Bắn trúng
+    - Nếu bạn chọn một ô mà có tàu trong vùng biển của đối phương, bạn đã bắn trúng
+    - Khi bắn trúng vào một tàu, health hiện tại của tàu đó sẽ tự động giảm đi một điểm
+
+    - Kí hiệu khi bắn trúng tàu
+
+*Bắn trượt
+    - Nếu bạn chọn một ô mà không có tàu trong vùng biển của đối phương, bạn đã bắn trượt.
+    - Khi bắn trượt, health hiện tại của các tàu đó sẽ không bị thay đổi
+
+    - Kí hiệu khi bắn trượt
+
+*Chìm tàu
+    - Khi health của một tàu bằng 0, tức là mọi vị trí trên tàu đã bị bắn trúng thì tàu sẽ bị chìm.
+
+5. Chiến thắng
+    - Nếu bạn phá hủy được 5 tàu của đối phương trước, bạn sẽ giành chiến thắng
+    - Tuy nhiên nếu bạn để máy tính bắn chìm 5 tàu của bạn trước thì bạn sẽ thua
+
+6. Quy tắc tính điểm
+    - <Điểm> = <số điểm bắn trúng>*100 + <số tàu đã bắn chìm>*1000 - <số điểm bắn trượt>*15
+    - <Điểm> luôn lớn hơn hoặc bằng 0

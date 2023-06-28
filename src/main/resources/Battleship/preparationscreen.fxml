@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #B0C4DE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Battleship.PrepareController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/background/z3512794364174_af054e071ba2caf66141e4fd848031f9.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="492.0" layoutY="49.0" text="Board Preparation" textFill="#133359">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="back_btn" fx:id="btnBack" layoutX="139.0" layoutY="127.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="42.0" prefWidth="72.0" stylesheets="@application.css" />
+      <Button id="start_btn" fx:id="btnStart" layoutX="261.0" layoutY="128.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="42.0" prefWidth="72.0" stylesheets="@application.css" />
+      <Button id="random_btn" fx:id="btnRandom" layoutX="387.0" layoutY="128.0" mnemonicParsing="false" onAction="#randomShip" prefHeight="42.0" prefWidth="72.0" stylesheets="@application.css">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button id="delete_btn" fx:id="btnDelete" layoutX="517.0" layoutY="127.0" mnemonicParsing="false" onAction="#resetShip" prefHeight="42.0" prefWidth="72.0" stylesheets="@application.css" />
+      <Line endX="-14.79998779296875" endY="30.199996948242188" layoutX="638.0" layoutY="145.0" startX="-14.79998779296875" startY="-25.0" />
+      <Label layoutX="660.0" layoutY="135.0" text="Difficulty" textFill="#133359">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="gameMode" layoutX="782.0" layoutY="132.0" prefHeight="35.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>
